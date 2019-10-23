@@ -44,6 +44,12 @@
 	<script src="js/google_analytics.js"></script>
 	<script src="js/google_tagmanager.js"></script>
 	<script src="js/whatsapp.js"></script>
+	<style>
+		.lazy{
+			display: block;
+			width: 100%;
+		}
+	</style>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -212,6 +218,17 @@
 				<img src="upload/manset/banner3.webp" alt="İSTER ÇİĞ İSTER PİŞMİŞ - KDZ.Ereğli'deki Lezzet Durağınız Hem kaliteli Hem hesaplı" title="#slider-direction-3"/>
 				<img src="upload/manset/banner4.webp" alt="İSTER ÇİĞ İSTER PİŞMİŞ - Lezzet tutkunlarının Vazgeçilmezi, Sağlıklı etin adresi Subaşı Kasap Izgara" title="#slider-direction-4"/>
 			</div>
+			<script src="js/mobile-detect.js"></script>
+			<script>
+				var md = new MobileDetect(window.navigator.userAgent);
+				if(md.is('iPhone'))
+				{
+					for(i=0;i<4;i++)
+					{
+						document.querySelectorAll('#ensign-nivoslider-3 img')[i].src = document.querySelectorAll('#ensign-nivoslider-3 img')[i].src.replace('.webp','.jpg');
+					}
+				}
+			</script>
 			<div id="slider-direction-1" class="t-cn slider-direction">
 				<div class="slider-content s-tb slide-1">
 					<div class="title-container s-tb-c">
@@ -251,7 +268,6 @@
 		</div>
 	</div>
 	<!-- Slider 1 Area End Here -->
-	<script src='../www.google.com/recaptcha/api.js'></script>
 	<!-- Table Reservation 2 Area Start Here -->
 	<div class="table-reservation2-area">
 		<div class="container">
@@ -261,7 +277,7 @@
 						<!-- Section: Services -->
 						<h2>Hakkımızda</h2>
 						<p>
-							Subaşı Kasap Izgara;...
+							Subaşı Kasap Izgara; Lorem Ipsum dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
 						</p>
 						<a href="hakkimizda.html" class="ghost-color-btn">Devamı<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 					</div>
@@ -287,7 +303,7 @@
 									<li><a href="urun-dana-antrikot-1656.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
-							<a href="urun-dana-antrikot-1656.html"><img class="img-responsive" src="upload/resimler/mini/antrikot_1.jpg" alt="Dana Antrikot"></a>
+							<a href="urun-dana-antrikot-1656.html"><img class="img-responsive lazy" src="upload/lazy.jpg" data-src="upload/resimler/mini/antrikot_1.jpg" alt="Dana Antrikot"></a>
 						</div>
 						<div class="food-menu2-title-holder">
 							<h3><a href="urun-dana-antrikot-1656.html">Dana Antrikot</a></h3>
@@ -302,7 +318,7 @@
 									<li><a href="urun-kuzu-yurek-1655.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
-							<a href="urun-kuzu-yurek-1655.html"><img class="img-responsive" src="upload/resimler/mini/Kuzu_Yrek.jpg" alt="Kuzu Yürek"></a>
+							<a href="urun-kuzu-yurek-1655.html"><img class="img-responsive lazy" src="upload/lazy.jpg" data-src="upload/resimler/mini/Kuzu_Yrek.jpg" alt="Kuzu Yürek"></a>
 						</div>
 						<div class="food-menu2-title-holder">
 							<h3><a href="urun-kuzu-yurek-1655.html">Kuzu Yürek</a></h3>
@@ -317,7 +333,7 @@
 									<li><a href="urun-dana-biftek-1654.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
-							<a href="urun-dana-biftek-1654.html"><img class="img-responsive" src="upload/resimler/mini/biftek_1.jpg" alt="Dana Biftek"></a>
+							<a href="urun-dana-biftek-1654.html"><img class="img-responsive lazy" src="upload/lazy.jpg" data-src="upload/resimler/mini/biftek_1.jpg" alt="Dana Biftek"></a>
 						</div>
 						<div class="food-menu2-title-holder">
 							<h3><a href="urun-dana-biftek-1654.html">Dana Biftek</a></h3>
@@ -332,7 +348,7 @@
 									<li><a href="urun-kuzu-paca-1653.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
-							<a href="urun-kuzu-paca-1653.html"><img class="img-responsive" src="upload/resimler/mini/Kuzu_Paa.jpg" alt="Kuzu Paça"></a>
+							<a href="urun-kuzu-paca-1653.html"><img class="img-responsive lazy" src="upload/lazy.jpg" data-src="upload/resimler/mini/Kuzu_Paa.jpg" alt="Kuzu Paça"></a>
 						</div>
 						<div class="food-menu2-title-holder">
 							<h3><a href="urun-kuzu-paca-1653.html">Kuzu Paça</a></h3>
@@ -347,7 +363,7 @@
 									<li><a href="urun-kuzu-kelle-1652.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
-							<a href="urun-kuzu-kelle-1652.html"><img class="img-responsive" src="upload/resimler/mini/Kuzu_Kelle.jpg" alt="Kuzu Kelle"></a>
+							<a href="urun-kuzu-kelle-1652.html"><img class="img-responsive lazy" src="upload/lazy.jpg" data-src="upload/resimler/mini/Kuzu_Kelle.jpg" alt="Kuzu Kelle"></a>
 						</div>
 						<div class="food-menu2-title-holder">
 							<h3><a href="urun-kuzu-kelle-1652.html">Kuzu Kelle</a></h3>
@@ -362,7 +378,7 @@
 									<li><a href="urun-dana-gerdan-1651.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
-							<a href="urun-dana-gerdan-1651.html"><img class="img-responsive" src="upload/resimler/mini/gerdan_1.jpg" alt="Dana Gerdan"></a>
+							<a href="urun-dana-gerdan-1651.html"><img class="img-responsive lazy" src="upload/lazy.jpg" data-src="upload/resimler/mini/gerdan_1.jpg" alt="Dana Gerdan"></a>
 						</div>
 						<div class="food-menu2-title-holder">
 							<h3><a href="urun-dana-gerdan-1651.html">Dana Gerdan</a></h3>
@@ -377,7 +393,7 @@
 									<li><a href="urun-kuzu-beyin-1650.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
-							<a href="urun-kuzu-beyin-1650.html"><img class="img-responsive" src="upload/resimler/mini/Kuzu_Beyin.jpg" alt="Kuzu Beyin"></a>
+							<a href="urun-kuzu-beyin-1650.html"><img class="img-responsive lazy" src="upload/lazy.jpg" data-src="upload/resimler/mini/Kuzu_Beyin.jpg" alt="Kuzu Beyin"></a>
 						</div>
 						<div class="food-menu2-title-holder">
 							<h3><a href="urun-kuzu-beyin-1650.html">Kuzu Beyin</a></h3>
@@ -392,7 +408,7 @@
 									<li><a href="urun-kuzu-pirzola-1642.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
-							<a href="urun-kuzu-pirzola-1642.html"><img class="img-responsive" src="upload/resimler/mini/Kuzu_Pirzola.jpg" alt="Kuzu Pirzola"></a>
+							<a href="urun-kuzu-pirzola-1642.html"><img class="img-responsive lazy" src="upload/lazy.jpg" data-src="upload/resimler/mini/Kuzu_Pirzola.jpg" alt="Kuzu Pirzola"></a>
 						</div>
 						<div class="food-menu2-title-holder">
 							<h3><a href="urun-kuzu-pirzola-1642.html">Kuzu Pirzola</a></h3>
@@ -423,28 +439,6 @@
 	</div>
 	</section>
 </div>
-<!-- Client Area Start Here -->
-<div>
-	<comments>
-
-	</comments>
-	<script src="js/mobile-detect.js"></script>
-	<script>
-	    var md = new MobileDetect(window.navigator.userAgent);
-		if(md.mobile() != null || md.phone() != null || md.tablet() != null)
-		{
-			console.log('Mobil');
-			document.querySelector('comments').innerHTML = '<iframe src="https://www.google.com/search?igu=1&q=suba%C5%9F%C4%B1+kasap+%C4%B1zgara#lkt=LocalPoiReviews&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15891465596018095533,rc_q:Suba%25C5%259F%25C4%25B1%2520Kasap%2520Izgara,ru_q:Suba%25C5%259F%25C4%25B1%2520Kasap%2520Izgara" width="100%" height="450" frameborder="0"></iframe>';
-			
-		}
-		else
-		{
-			console.log('Bilgisayar');
-			document.querySelector('comments').innerHTML = '<iframe src="https://www.google.com/search?igu=1&q=suba%C5%9F%C4%B1+kasap+%C4%B1zgara#lrd=0x409c459a8e78f2f3:0xdc89d3c352fff5ad,1,,," width="100%" height="450" frameborder="0"></iframe>';
-		}
-	</script>
-</div>
-<!-- Client Area End Here -->
 <!-- Recipe of the day 2 Area Start Here -->
 <div class="recipe-of-the-day2-area">
 	<img src="style/css/color/img/recipe-of-the-day2-banner.png" class="img-responsive section-back" alt="recipe-of-the-day2-banner">
@@ -454,7 +448,7 @@
 			<div class="rc-carousel" data-loop="true" data-items="3" data-margin="0" data-autoplay="false" data-autoplay-timeout="10000" data-smart-speed="2000" data-dots="false" data-nav="true" data-nav-speed="false" data-r-x-small="1" data-r-x-small-nav="false" data-r-x-small-dots="true" data-r-x-medium="2" data-r-x-medium-nav="false" data-r-x-medium-dots="true" data-r-small="2" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="3" data-r-medium-nav="true" data-r-medium-dots="false">
 				
 				<div class="recipe-box2">
-					<img src="upload/blog/damak-tadini-bilenler.jpg" alt="Ereğli Hakimiyet'teki Haberimiz!" class="img-responsive">
+					<img src="upload/lazy.jpg" data-src="upload/blog/damak-tadini-bilenler.jpg" alt="Ereğli Hakimiyet'teki Haberimiz!" class="img-responsive lazy">
 					<div class="recipe-box2-bottom-content-holder">
 						<h3><a target="_blank" href="http://www.ereglihakimiyet.com/haberler.asp?id=37806">Ereğli Hakimiyet'teki Haberimiz!</a></h3>
 						<p>
@@ -481,7 +475,7 @@
 				</div>
 
 				<div class="recipe-box2">
-					<img src="upload/blog/acilis-kurdela-kesimi.jpg" alt="Manset67'deki Haberimiz!" class="img-responsive">
+					<img src="upload/lazy.jpg" data-src="upload/blog/acilis-kurdela-kesimi.jpg" alt="Manset67'deki Haberimiz!" class="img-responsive lazy">
 					<div class="recipe-box2-bottom-content-holder">
 						<h3><a target="_blank" href="http://www.manset67.com/haber/Subasi-Kasap-Izgara-artik-hizmetinizde-/15357">Manset67'deki Haberimiz!</a></h3>
 						<p>
@@ -494,7 +488,7 @@
 				</div>
 
 				<div class="recipe-box2">
-					<img src="upload/blog/subasi-kasap-izgara-dis-gorunus.jpg" alt="Diğer Medya Haberimiz!" class="img-responsive">
+					<img src="upload/lazy.jpg" data-src="upload/blog/subasi-kasap-izgara-dis-gorunus.jpg" alt="Diğer Medya Haberimiz!" class="img-responsive lazy">
 					<div class="recipe-box2-bottom-content-holder">
 						<h3><a target="_blank" href="http://www.kdzereglihaber.com/haber/Subasi-Kasap-Izgara-ya-gorkemli-acilis/14302#h14302">Diğer Medya Haberimiz!</a></h3>
 						<p>
@@ -650,7 +644,7 @@
 <script src="style/js/jquery.counterup.min.js"></script>
 <script src="style/js/waypoints.min.js"></script>
 <!-- Date Time Picker Js -->
-<script src="style/js/jquery.datetimepicker.full.min.js" type="text/javascript"></script>
+<!--<script src="style/js/jquery.datetimepicker.full.min.js" type="text/javascript"></script>-->
 <!-- Isotope js -->
 <script src="style/js/isotope.pkgd.min.js" type="text/javascript"></script>
 <!-- Switch js -->
@@ -659,9 +653,23 @@
 <script src="style/js/validator.min.js" type="text/javascript"></script>
 <!-- Custom Js -->
 <script src="style/js/main.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			$('.lazy').each(function(){
+				if( $(this).offset().top < ($(window).scrollTop() + $(window).height() + 100) )
+				{          		   
+					$(this).attr('src', $(this).attr('data-src'));
+				}
+			});
+		});
+	});
+</script>
 
 </div>
 <!-- Preloader Start Here -->
+<script src="js/menu_fix.js"></script>
+<script src="js/ilave.js"></script>
 </body>
 
 </html>

@@ -225,15 +225,21 @@
                     <img class="pull-left mr-15 thumbnail" src="upload/galeri/hakkimizda.svg" style="max-width:300px;" alt="Hakkımızda">
                     <p>
                         <h4>Hakkımızda</h4>
-                        <p>...</p>
+                        <p>
+                            Subaşı Kasap Izgara; ...
+                        </p>
                     </p>
                     <p>
                         <h4>Vizyonumuz</h4>
-                        <p>...</p>
+                        <p>
+                            ...
+                        </p>
                     </p>
                     <p>
                         <h4>Misyonumuz</h4>
-                        <p>...</p>
+                        <p>
+                            ...
+                        </p>
                     </p>
                 </div>
                 
@@ -269,18 +275,6 @@
                                 <div class="tab-pane" id="single-menu3">
                                     <img src="upload/resimler/subasi-kasabi-belgeleri-3.jpg" height="628" style="max-height:628px; max-width:739px" class="img-responsive" alt="Subaşı Kasabı Belgeleri 3">
                                 </div>
-                                
-                                <!--
-                                <div class="tab-pane" id="single-menu3">
-                                    <img src="upload/resimler/subasi-kasabi-izgara-ic-gorunus-3.jpg" height="500" style="max-height:500px; max-width:739px" class="img-responsive" alt="Subaşı Kasabı Izgara - İç Görünüş Resmi 3">
-                                </div>
-                                <div class="tab-pane" id="single-menu4">
-                                    <img src="upload/resimler/subasi-kasabi-izgara-ic-gorunus-4.jpg" height="500" style="max-height:500px; max-width:739px" class="img-responsive" alt="Subaşı Kasabı Izgara - İç Görünüş Resmi 4">
-                                </div>
-                                <div class="tab-pane" id="single-menu5">
-                                    <img src="upload/resimler/subasi-kasabi-izgara-ic-gorunus-5.jpg" height="500" style="max-height:500px; max-width:739px" class="img-responsive" alt="Subaşı Kasabı Izgara - İç Görünüş Resmi 5">
-                                </div>
-                                -->
 
                             </div>
                         </div>
@@ -290,6 +284,36 @@
         </div>
     </div>
     <!-- Single Menu Area End Here -->
+    <!-- Client Area Start Here -->
+    <div>
+        <div class="container"><h2 class="title-sidebar title-bar-sidebar">MÜŞTERİ YORUMLARI</h2></div>
+        
+        <iframe src="loader/index.html" width="100%" height="450" frameborder="0" id="loading"></iframe>
+        
+        <comments>
+
+        </comments>
+
+        <script src="js/mobile-detect.js"></script>
+        <script>
+            var md = new MobileDetect(window.navigator.userAgent);
+            if(md.mobile() != null || md.phone() != null || md.tablet() != null)
+            {
+                //console.log('Mobil');
+                document.querySelector('comments').innerHTML = '<iframe src="https://www.google.com/search?igu=1&q=suba%C5%9F%C4%B1+kasap+%C4%B1zgara#lkt=LocalPoiReviews&trex=m_t:lcl_akp,rc_f:nav,rc_ludocids:15891465596018095533,rc_q:Suba%25C5%259F%25C4%25B1%2520Kasap%2520Izgara,ru_q:Suba%25C5%259F%25C4%25B1%2520Kasap%2520Izgara" width="100%" height="450" frameborder="0" style="display:none;"></iframe>';
+            }
+            else
+            {
+                //console.log('Bilgisayar');
+                document.querySelector('comments').innerHTML = '<iframe src="https://www.google.com/search?igu=1&q=suba%C5%9F%C4%B1+kasap+%C4%B1zgara#lrd=0x409c459a8e78f2f3:0xdc89d3c352fff5ad,1,,," width="100%" height="450" frameborder="0" style="display:none;"></iframe>';
+            }
+            setTimeout(function(){
+                document.querySelector('iframe').remove();
+                document.querySelector('iframe').style.display = 'block';
+            },7000);
+        </script>
+    </div>
+    <!-- Client Area End Here -->
     <footer>
     <div class="footer-area-top section-space">
         <div class="container">
@@ -406,5 +430,7 @@ jQuery(document).ready(function(){
     </script>
 </div>
 <!-- Preloader Start Here -->
+<script src="js/menu_fix.js"></script>
+<script src="js/ilave.js"></script>
 </body>
 </html>
