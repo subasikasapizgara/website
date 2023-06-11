@@ -1679,8 +1679,8 @@ videos: {
     },
     "tum-guvec-cesitleri": {
         id: "S-TIqLODxzE",
-        title: "Güveç Çeşitleri",
-        description: '<br>1 kg 4 kişilik<br>2 kg 8 kişilik<br>3 kg 12 kişilik<br>4 kg 16 kişilik<br>5 kg 20 kişilik',
+        title: "Güveç Çeşitleri (Kişi Başı)",
+        description: '<br>1 kg 4 kişilik<br>2 kg 8 kişilik<br>3 kg 12 kişilik<br>4 kg 16 kişilik<br>5 kg 20 kişilik<br>Lütfen <b>en az 4 saat</b> öncesinden rezervasyon oluşturun.',
         published: "Güveç Çeşitleri",
         cohost: "guvec-cesitleri",
         fiyat: '200,00 ₺'
