@@ -430,6 +430,10 @@ jQuery(document).ready(function(){
             });
             });
     </script>
+	<script type="text/javascript">
+		if (new URLSearchParams(location.search).toString())
+			document.querySelector('html').scrollTop = document.querySelector('comments').parentElement.offsetTop - (document.querySelector('#sticker').offsetHeight || document.querySelector('.mean-nav').offsetHeight)
+	</script>
 </div>
 <!-- Preloader Start Here -->
 <script src="js/menu_fix.js"></script>
