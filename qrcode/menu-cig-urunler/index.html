@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="tr" class=""><head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#000">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <title>Subaşı Kasap Izgara - Menü</title>
+        <style>
+            :root {
+                --white: #fff;
+                --primary-text: #212121;
+                --secondary-text: #757575;
+                --divider: #bdbdbd;
+                --primary-color: #673ab7;
+                --primary-dark: #512da8;
+                --primary-light: #d1c4e9;
+                --accent-color: #ff9800;
+                --content-padding: 1.2rem
+            }
+
+            html {
+                background: var(--divider);
+                color: var(--primary-text);
+                font-family: system-ui,sans-serif;
+                font-size: 16px;
+                height: -webkit-fill-available;
+                line-height: 1.5
+            }
+
+            body {
+                height: 100vh;
+                height: -webkit-fill-available;
+                margin: 0
+            }
+
+            a {
+                text-decoration: none
+            }
+
+            a:hover {
+                text-decoration: underline
+            }
+
+            * {
+                -webkit-tap-highlight-color: transparent
+            }
+
+            @keyframes _slide-from-right_89th5_1 {
+                0% {
+                    transform: translateX(100%)
+                }
+            }
+
+            @keyframes _slide-to-left_89th5_1 {
+                to {
+                    transform: translateX(-100%)
+                }
+            }
+
+            @keyframes _slide-from-left_89th5_1 {
+                0% {
+                    transform: translateX(-100%)
+                }
+            }
+
+            @keyframes _slide-to-right_89th5_1 {
+                to {
+                    transform: translateX(100%)
+                }
+            }
+
+            @keyframes _fade-in_89th5_1 {
+                0% {
+                    opacity: 0
+                }
+            }
+
+            @keyframes _fade-out_89th5_1 {
+                to {
+                    opacity: 0
+                }
+            }
+
+            @keyframes _fade-out-a-bit_89th5_1 {
+                to {
+                    opacity: .5
+                }
+            }
+
+            @keyframes _fade-in-a-bit_89th5_1 {
+                0% {
+                    opacity: .5
+                }
+            }
+
+            @keyframes _slide-and-fade-from-right_89th5_1 {
+                0% {
+                    opacity: 0;
+                    transform: translateX(60px)
+                }
+            }
+
+            @keyframes _slide-and-fade-to-left_89th5_1 {
+                to {
+                    opacity: 0;
+                    transform: translateX(-60px)
+                }
+            }
+
+            @keyframes _slide-and-fade-from-left_89th5_1 {
+                0% {
+                    opacity: 0;
+                    transform: translateX(-60px)
+                }
+            }
+
+            @keyframes _slide-and-fade-to-right_89th5_1 {
+                to {
+                    opacity: 0;
+                    transform: translateX(60px)
+                }
+            }
+
+            html.from-thumbs.to-video::view-transition-group(embed-container),html.from-video.to-thumbs::view-transition-group(embed-container) {
+                animation-duration: .3s;
+                animation-timing-function: ease;
+                z-index: 1
+            }
+
+            html.from-thumbs.to-video::view-transition-group(root),html.from-video.to-thumbs::view-transition-group(root) {
+                animation: none;
+                background: #000;
+                z-index: 0
+            }
+
+            html.from-thumbs.to-video::view-transition-image-pair(root),html.from-video.to-thumbs::view-transition-image-pair(root) {
+                isolation: auto
+            }
+
+            html.from-thumbs.to-video::view-transition-new(root),html.from-thumbs.to-video::view-transition-old(root),html.from-video.to-thumbs::view-transition-new(root),html.from-video.to-thumbs::view-transition-old(root) {
+                mix-blend-mode: normal;
+                transform-origin: 0 0
+            }
+
+            html.from-thumbs.to-video::view-transition-old(root) {
+                animation: _fade-out-a-bit_89th5_1 .3s ease both
+            }
+
+            html.from-video.to-thumbs::view-transition-new(root) {
+                animation: _fade-in-a-bit_89th5_1 .3s ease both
+            }
+
+            html.from-thumbs.to-video::view-transition-new(root) {
+                animation: _fade-in_89th5_1 .15s ease 60ms both
+            }
+
+            html.from-video.to-thumbs::view-transition-old(root) {
+                animation: _fade-out_89th5_1 .15s ease 60ms both;
+                z-index: 2
+            }
+
+            html.from-video.to-video::view-transition-new(root) {
+                animation: _slide-from-right_89th5_1 .5s ease-out both
+            }
+
+            html.from-video.to-video::view-transition-old(root) {
+                animation: _slide-to-left_89th5_1 .5s ease-out both
+            }
+
+            html.from-video.to-video.back-transition::view-transition-new(root) {
+                animation-name: _slide-from-left_89th5_1
+            }
+
+            html.from-video.to-video.back-transition::view-transition-old(root) {
+                animation-name: _slide-to-right_89th5_1
+            }
+
+            @media (min-width: 660px) {
+                html.from-video.to-video::view-transition-new(root) {
+                    animation-duration:.3s;
+                    animation-name: _slide-and-fade-from-right_89th5_1
+                }
+
+                html.from-video.to-video::view-transition-old(root) {
+                    animation-duration: .3s;
+                    animation-name: _slide-and-fade-to-left_89th5_1
+                }
+
+                html.from-video.to-video.back-transition::view-transition-new(root) {
+                    animation-name: _slide-and-fade-from-left_89th5_1
+                }
+
+                html.from-video.to-video.back-transition::view-transition-old(root) {
+                    animation-name: _slide-and-fade-to-right_89th5_1
+                }
+            }
+
+            .no-root-transition::view-transition-new(root),.no-root-transition::view-transition-old(root) {
+                animation: none
+            }
+
+            .no-root-transition::view-transition-old(root) {
+                display: none
+            }
+
+            ._video-layout_yinxv_1 {
+                display: grid;
+                grid-template-rows: min-content 1fr
+            }
+
+            @media (min-width: 900px) {
+                ._video-layout_yinxv_1 {
+                    grid-template-columns:1fr 230px;
+                    grid-template-rows: none;
+                    height: 100%
+                }
+
+                ._video-and-details_yinxv_12 {
+                    display: grid;
+                    grid-template-rows: max-content minmax(max-content,1fr);
+                    overflow-x: hidden;
+                    overflow-y: auto
+                }
+            }
+
+            ._video-details_yinxv_21 {
+                background: var(--white);
+                overflow: hidden;
+                padding: var(--content-padding)
+            }
+
+            ._video-title_yinxv_27 {
+                font-size: 1.6rem;
+                font-weight: 600;
+                margin: 0;
+                max-width: 43ch
+            }
+
+            ._description_yinxv_34 {
+                line-height: 1.6;
+                max-width: 67ch
+            }
+
+            ._scroller_yinxv_39 {
+                --video-list-columns: none;
+                --video-list-auto-flow: column;
+                --video-list-auto-columns: 135px;
+                align-items: start;
+                background: var(--divider);
+                contain: paint;
+                display: grid;
+                min-height: 159px;
+                overflow-x: auto;
+                overflow-y: hidden
+            }
+
+            .from-video.to-video ._scroller_yinxv_39 {
+                view-transition-name: related-videos
+            }
+
+            @media (min-width: 900px) {
+                ._scroller_yinxv_39 {
+                    --video-list-auto-flow:row;
+                    --video-list-auto-columns: auto;
+                    --video-list-auto-rows: auto;
+                    height: 100vh;
+                    overflow-x: hidden;
+                    overflow-y: auto
+                }
+            }
+
+            ._main-layout_ak685_1 {
+                display: grid;
+                grid-template-rows: auto 1fr;
+                height: 100%
+            }
+
+            ._header_ak685_7 {
+                view-transition-name: site-header;
+                align-items: center;
+                background: #df0024;
+                color: var(--white);
+                contain: paint;
+                display: grid;
+                height: 54px;
+                padding: 0 var(--content-padding);
+                pointer-events: auto;
+                position: sticky;
+                top: 0;
+                z-index: 1
+            }
+
+            ._header-container_ak685_22 {
+                pointer-events: none
+            }
+
+            ._show-back-icon_ak685_26._header_ak685_7 {
+                padding: 0 10px
+            }
+
+            ._main_ak685_1 {
+                display: grid;
+                grid-template-columns: 100%
+            }
+
+            @media (min-width: 900px) {
+                ._main_ak685_1 {
+                    display:block
+                }
+            }
+
+            ._home-link_ak685_39 {
+                fill: var(--white);
+                color: inherit;
+                contain: paint;
+                width: max-content
+            }
+
+            ._show-back-icon_ak685_26 ._home-link_ak685_39 {
+                align-items: center;
+                display: grid;
+                gap: .3rem;
+                grid-template-columns: 31px 1fr
+            }
+
+            ._back-icon_ak685_53 {
+                display: none
+            }
+
+            ._show-back-icon_ak685_26 ._back-icon_ak685_53 {
+                display: block
+            }
+
+            ._header-text_ak685_61 {
+                view-transition-name: header-text;
+                contain: paint;
+                display: block
+            }
+
+            ._video-list_pcyj8_1 {
+                background: var(--divider);
+                display: grid;
+                gap: var(--content-padding);
+                grid-auto-columns: var(--video-list-auto-columns);
+                grid-auto-flow: var(--video-list-auto-flow);
+                grid-auto-rows: var(--video-list-auto-rows);
+                grid-template-columns: var( --video-list-columns,repeat(auto-fill,minmax(300px,1fr)) );
+                margin: 0;
+                padding: var(--content-padding)
+            }
+
+            ._video-list_pcyj8_1>li {
+                box-shadow: 0 4px 4px rgba(0,0,0,.1);
+                display: block
+            }
+
+            ._video-thumb_pcyj8_21 {
+                aspect-ratio: 16/9;
+                contain: paint;
+                display: block;
+                height: auto;
+                object-fit: cover;
+                object-position: center;
+                width: 100%
+            }
+
+            ._video-meta_pcyj8_31 {
+                background: var(--white);
+                contain: paint;
+                margin: 0;
+                padding: .4rem 1rem
+            }
+
+            ._video-link_pcyj8_38 {
+                color: inherit;
+                contain: paint;
+                display: block
+            }
+
+            ._video-link_pcyj8_38:hover {
+                text-decoration: none
+            }
+
+            ._cohost-switch-wrapper_1lke1_1 {
+                padding: 0 var(--content-padding)
+            }
+
+            ._cohost-switch_1lke1_1 {
+                background: var(--white);
+                border-radius: 19px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                margin: 0 auto;
+                margin-top: var(--content-padding);
+                padding: .3rem .4rem;
+                width: fit-content
+            }
+
+            ._cohost-switch_1lke1_1>* {
+                display: block
+            }
+
+            ._cohost-switch_1lke1_1 a {
+                border-radius: 1000px;
+                color: #df0024;
+                display: block;
+                padding: .1rem .9rem
+            }
+
+            ._current-cohost_1lke1_29 a {
+                background: #df0024;
+                color: #fff
+            }
+
+            ._embed_7i06w_1,._video-img_7i06w_2 {
+                aspect-ratio: 16/9;
+                display: block;
+                height: auto;
+                width: 100%
+            }
+
+            ._video-img_7i06w_2 {
+                object-fit: cover;
+                object-position: center;
+                pointer-events: none;
+                transition: opacity .5s ease-in-out;
+                will-change: opacity
+            }
+
+            ._embed-container_7i06w_17 {
+                view-transition-name: embed-container;
+                contain: paint;
+                display: grid
+            }
+
+            .from-video.to-video ._embed-container_7i06w_17 {
+                view-transition-name: none
+            }
+
+            ._embed-container_7i06w_17>* {
+                grid-area: 1/1
+            }
+        </style>
+    <link rel="icon" href="https://localhost/qrcode/c/favicon-9106ee98.png" type="image/png"><script type="module" src="https://localhost/qrcode/c/client-16215717.js"></script><script src="https://localhost/qrcode/../style/js/sweetalert2.js"></script><script src="https://localhost/qrcode/../js/google_analytics.js"></script><script src="https://localhost/qrcode/../js/google_tagmanager.js"></script><script src="https://localhost/qrcode/../js/ilave.js"></script><link rel="stylesheet" href="https://localhost/qrcode/../style/css/animate.min.css"><style>.swal2-popup.swal2-toast{box-sizing:border-box;grid-column:1/4 !important;grid-row:1/4 !important;grid-template-columns:min-content auto min-content;padding:1em;overflow-y:hidden;background:#fff;box-shadow:0 0 1px rgba(0,0,0,.075),0 1px 2px rgba(0,0,0,.075),1px 2px 4px rgba(0,0,0,.075),1px 3px 8px rgba(0,0,0,.075),2px 4px 16px rgba(0,0,0,.075);pointer-events:all}.swal2-popup.swal2-toast>*{grid-column:2}.swal2-popup.swal2-toast .swal2-title{margin:.5em 1em;padding:0;font-size:1em;text-align:initial}.swal2-popup.swal2-toast .swal2-loading{justify-content:center}.swal2-popup.swal2-toast .swal2-input{height:2em;margin:.5em;font-size:1em}.swal2-popup.swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{grid-column:3/3;grid-row:1/99;align-self:center;width:.8em;height:.8em;margin:0;font-size:2em}.swal2-popup.swal2-toast .swal2-html-container{margin:.5em 1em;padding:0;overflow:initial;font-size:1em;text-align:initial}.swal2-popup.swal2-toast .swal2-html-container:empty{padding:0}.swal2-popup.swal2-toast .swal2-loader{grid-column:1;grid-row:1/99;align-self:center;width:2em;height:2em;margin:.25em}.swal2-popup.swal2-toast .swal2-icon{grid-column:1;grid-row:1/99;align-self:center;width:2em;min-width:2em;height:2em;margin:0 .5em 0 0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:bold}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{justify-content:flex-start;height:auto;margin:0;margin-top:.5em;padding:0 .5em}.swal2-popup.swal2-toast .swal2-styled{margin:.25em .5em;padding:.4em .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-0.8em;left:-0.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-0.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{animation:swal2-toast-hide .1s forwards}div:where(.swal2-container){display:grid;position:fixed;z-index:1060;inset:0;box-sizing:border-box;grid-template-areas:"top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end";grid-template-rows:minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);height:100%;padding:.625em;overflow-x:hidden;transition:background-color .1s;-webkit-overflow-scrolling:touch}div:where(.swal2-container).swal2-backdrop-show,div:where(.swal2-container).swal2-noanimation{background:rgba(0,0,0,.4)}div:where(.swal2-container).swal2-backdrop-hide{background:rgba(0,0,0,0) !important}div:where(.swal2-container).swal2-top-start,div:where(.swal2-container).swal2-center-start,div:where(.swal2-container).swal2-bottom-start{grid-template-columns:minmax(0, 1fr) auto auto}div:where(.swal2-container).swal2-top,div:where(.swal2-container).swal2-center,div:where(.swal2-container).swal2-bottom{grid-template-columns:auto minmax(0, 1fr) auto}div:where(.swal2-container).swal2-top-end,div:where(.swal2-container).swal2-center-end,div:where(.swal2-container).swal2-bottom-end{grid-template-columns:auto auto minmax(0, 1fr)}div:where(.swal2-container).swal2-top-start>.swal2-popup{align-self:start}div:where(.swal2-container).swal2-top>.swal2-popup{grid-column:2;align-self:start;justify-self:center}div:where(.swal2-container).swal2-top-end>.swal2-popup,div:where(.swal2-container).swal2-top-right>.swal2-popup{grid-column:3;align-self:start;justify-self:end}div:where(.swal2-container).swal2-center-start>.swal2-popup,div:where(.swal2-container).swal2-center-left>.swal2-popup{grid-row:2;align-self:center}div:where(.swal2-container).swal2-center>.swal2-popup{grid-column:2;grid-row:2;align-self:center;justify-self:center}div:where(.swal2-container).swal2-center-end>.swal2-popup,div:where(.swal2-container).swal2-center-right>.swal2-popup{grid-column:3;grid-row:2;align-self:center;justify-self:end}div:where(.swal2-container).swal2-bottom-start>.swal2-popup,div:where(.swal2-container).swal2-bottom-left>.swal2-popup{grid-column:1;grid-row:3;align-self:end}div:where(.swal2-container).swal2-bottom>.swal2-popup{grid-column:2;grid-row:3;justify-self:center;align-self:end}div:where(.swal2-container).swal2-bottom-end>.swal2-popup,div:where(.swal2-container).swal2-bottom-right>.swal2-popup{grid-column:3;grid-row:3;align-self:end;justify-self:end}div:where(.swal2-container).swal2-grow-row>.swal2-popup,div:where(.swal2-container).swal2-grow-fullscreen>.swal2-popup{grid-column:1/4;width:100%}div:where(.swal2-container).swal2-grow-column>.swal2-popup,div:where(.swal2-container).swal2-grow-fullscreen>.swal2-popup{grid-row:1/4;align-self:stretch}div:where(.swal2-container).swal2-no-transition{transition:none !important}div:where(.swal2-container) div:where(.swal2-popup){display:none;position:relative;box-sizing:border-box;grid-template-columns:minmax(0, 100%);width:32em;max-width:100%;padding:0 0 1.25em;border:none;border-radius:5px;background:#fff;color:#545454;font-family:inherit;font-size:1rem}div:where(.swal2-container) div:where(.swal2-popup):focus{outline:none}div:where(.swal2-container) div:where(.swal2-popup).swal2-loading{overflow-y:hidden}div:where(.swal2-container) h2:where(.swal2-title){position:relative;max-width:100%;margin:0;padding:.8em 1em 0;color:inherit;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}div:where(.swal2-container) div:where(.swal2-actions){display:flex;z-index:1;box-sizing:border-box;flex-wrap:wrap;align-items:center;justify-content:center;width:auto;margin:1.25em auto 0;padding:0}div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))}div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))}div:where(.swal2-container) div:where(.swal2-loader){display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:#2778c4 rgba(0,0,0,0) #2778c4 rgba(0,0,0,0)}div:where(.swal2-container) button:where(.swal2-styled){margin:.3125em;padding:.625em 1.1em;transition:box-shadow .1s;box-shadow:0 0 0 3px rgba(0,0,0,0);font-weight:500}div:where(.swal2-container) button:where(.swal2-styled):not([disabled]){cursor:pointer}div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#7066e0;color:#fff;font-size:1em}div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus{box-shadow:0 0 0 3px rgba(112,102,224,.5)}div:where(.swal2-container) button:where(.swal2-styled).swal2-deny{border:0;border-radius:.25em;background:initial;background-color:#dc3741;color:#fff;font-size:1em}div:where(.swal2-container) button:where(.swal2-styled).swal2-deny:focus{box-shadow:0 0 0 3px rgba(220,55,65,.5)}div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#6e7881;color:#fff;font-size:1em}div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel:focus{box-shadow:0 0 0 3px rgba(110,120,129,.5)}div:where(.swal2-container) button:where(.swal2-styled).swal2-default-outline:focus{box-shadow:0 0 0 3px rgba(100,150,200,.5)}div:where(.swal2-container) button:where(.swal2-styled):focus{outline:none}div:where(.swal2-container) button:where(.swal2-styled)::-moz-focus-inner{border:0}div:where(.swal2-container) div:where(.swal2-footer){justify-content:center;margin:1em 0 0;padding:1em 1em 0;border-top:1px solid #eee;color:inherit;font-size:1em}div:where(.swal2-container) .swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;grid-column:auto !important;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}div:where(.swal2-container) div:where(.swal2-timer-progress-bar){width:100%;height:.25em;background:rgba(0,0,0,.2)}div:where(.swal2-container) img:where(.swal2-image){max-width:100%;margin:2em auto 1em}div:where(.swal2-container) button:where(.swal2-close){z-index:2;align-items:center;justify-content:center;width:1.2em;height:1.2em;margin-top:0;margin-right:0;margin-bottom:-1.2em;padding:0;overflow:hidden;transition:color .1s,box-shadow .1s;border:none;border-radius:5px;background:rgba(0,0,0,0);color:#ccc;font-family:monospace;font-size:2.5em;cursor:pointer;justify-self:end}div:where(.swal2-container) button:where(.swal2-close):hover{transform:none;background:rgba(0,0,0,0);color:#f27474}div:where(.swal2-container) button:where(.swal2-close):focus{outline:none;box-shadow:inset 0 0 0 3px rgba(100,150,200,.5)}div:where(.swal2-container) button:where(.swal2-close)::-moz-focus-inner{border:0}div:where(.swal2-container) .swal2-html-container{z-index:1;justify-content:center;margin:1em 1.6em .3em;padding:0;overflow:auto;color:inherit;font-size:1.125em;font-weight:normal;line-height:normal;text-align:center;word-wrap:break-word;word-break:break-word}div:where(.swal2-container) input:where(.swal2-input),div:where(.swal2-container) input:where(.swal2-file),div:where(.swal2-container) textarea:where(.swal2-textarea),div:where(.swal2-container) select:where(.swal2-select),div:where(.swal2-container) div:where(.swal2-radio),div:where(.swal2-container) label:where(.swal2-checkbox){margin:1em 2em 3px}div:where(.swal2-container) input:where(.swal2-input),div:where(.swal2-container) input:where(.swal2-file),div:where(.swal2-container) textarea:where(.swal2-textarea){box-sizing:border-box;width:auto;transition:border-color .1s,box-shadow .1s;border:1px solid #d9d9d9;border-radius:.1875em;background:rgba(0,0,0,0);box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px rgba(0,0,0,0);color:inherit;font-size:1.125em}div:where(.swal2-container) input:where(.swal2-input).swal2-inputerror,div:where(.swal2-container) input:where(.swal2-file).swal2-inputerror,div:where(.swal2-container) textarea:where(.swal2-textarea).swal2-inputerror{border-color:#f27474 !important;box-shadow:0 0 2px #f27474 !important}div:where(.swal2-container) input:where(.swal2-input):focus,div:where(.swal2-container) input:where(.swal2-file):focus,div:where(.swal2-container) textarea:where(.swal2-textarea):focus{border:1px solid #b4dbed;outline:none;box-shadow:inset 0 1px 1px rgba(0,0,0,.06),0 0 0 3px rgba(100,150,200,.5)}div:where(.swal2-container) input:where(.swal2-input)::placeholder,div:where(.swal2-container) input:where(.swal2-file)::placeholder,div:where(.swal2-container) textarea:where(.swal2-textarea)::placeholder{color:#ccc}div:where(.swal2-container) .swal2-range{margin:1em 2em 3px;background:#fff}div:where(.swal2-container) .swal2-range input{width:80%}div:where(.swal2-container) .swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}div:where(.swal2-container) .swal2-range input,div:where(.swal2-container) .swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}div:where(.swal2-container) .swal2-input{height:2.625em;padding:0 .75em}div:where(.swal2-container) .swal2-file{width:75%;margin-right:auto;margin-left:auto;background:rgba(0,0,0,0);font-size:1.125em}div:where(.swal2-container) .swal2-textarea{height:6.75em;padding:.75em}div:where(.swal2-container) .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:rgba(0,0,0,0);color:inherit;font-size:1.125em}div:where(.swal2-container) .swal2-radio,div:where(.swal2-container) .swal2-checkbox{align-items:center;justify-content:center;background:#fff;color:inherit}div:where(.swal2-container) .swal2-radio label,div:where(.swal2-container) .swal2-checkbox label{margin:0 .6em;font-size:1.125em}div:where(.swal2-container) .swal2-radio input,div:where(.swal2-container) .swal2-checkbox input{flex-shrink:0;margin:0 .4em}div:where(.swal2-container) label:where(.swal2-input-label){display:flex;justify-content:center;margin:1em auto 0}div:where(.swal2-container) div:where(.swal2-validation-message){align-items:center;justify-content:center;margin:1em 0 0;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}div:where(.swal2-container) div:where(.swal2-validation-message)::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}div:where(.swal2-container) .swal2-progress-steps{flex-wrap:wrap;align-items:center;max-width:100%;margin:1.25em auto;padding:0;background:rgba(0,0,0,0);font-weight:600}div:where(.swal2-container) .swal2-progress-steps li{display:inline-block;position:relative}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:#2778c4;color:#fff;line-height:2em;text-align:center}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#2778c4}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}div:where(.swal2-container) .swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:#2778c4}div:where(.swal2-icon){position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:2.5em auto .6em;border:0.25em solid rgba(0,0,0,0);border-radius:50%;border-color:#000;font-family:inherit;line-height:5em;cursor:default;user-select:none}div:where(.swal2-icon) .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}div:where(.swal2-icon).swal2-error{border-color:#f27474;color:#f27474}div:where(.swal2-icon).swal2-error .swal2-x-mark{position:relative;flex-grow:1}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}div:where(.swal2-icon).swal2-error.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-error.swal2-icon-show .swal2-x-mark{animation:swal2-animate-error-x-mark .5s}div:where(.swal2-icon).swal2-warning{border-color:#facea8;color:#f8bb86}div:where(.swal2-icon).swal2-warning.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-warning.swal2-icon-show .swal2-icon-content{animation:swal2-animate-i-mark .5s}div:where(.swal2-icon).swal2-info{border-color:#9de0f6;color:#3fc3ee}div:where(.swal2-icon).swal2-info.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-info.swal2-icon-show .swal2-icon-content{animation:swal2-animate-i-mark .8s}div:where(.swal2-icon).swal2-question{border-color:#c9dae1;color:#87adbd}div:where(.swal2-icon).swal2-question.swal2-icon-show{animation:swal2-animate-error-icon .5s}div:where(.swal2-icon).swal2-question.swal2-icon-show .swal2-icon-content{animation:swal2-animate-question-mark .8s}div:where(.swal2-icon).swal2-success{border-color:#a5dc86;color:#a5dc86}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;transform:rotate(45deg);border-radius:50%}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=left]{top:-0.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}div:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=right]{top:-0.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}div:where(.swal2-icon).swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-0.25em;left:-0.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}div:where(.swal2-icon).swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}div:where(.swal2-icon).swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}div:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-tip{animation:swal2-animate-success-line-tip .75s}div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-long{animation:swal2-animate-success-line-long .75s}div:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-circular-line-right{animation:swal2-rotate-success-circular-line 4.25s ease-in}[class^=swal2]{-webkit-tap-highlight-color:rgba(0,0,0,0)}.swal2-show{animation:swal2-show .3s}.swal2-hide{animation:swal2-hide .15s forwards}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{margin-right:initial;margin-left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}@keyframes swal2-toast-show{0%{transform:translateY(-0.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(0.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0deg)}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-0.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-show{0%{transform:scale(0.7)}45%{transform:scale(1.05)}80%{transform:scale(0.95)}100%{transform:scale(1)}}@keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(0.5);opacity:0}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-0.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(0.4);opacity:0}50%{margin-top:1.625em;transform:scale(0.4);opacity:0}80%{margin-top:-0.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0deg);opacity:1}}@keyframes swal2-rotate-loading{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes swal2-animate-question-mark{0%{transform:rotateY(-360deg)}100%{transform:rotateY(0)}}@keyframes swal2-animate-i-mark{0%{transform:rotateZ(45deg);opacity:0}25%{transform:rotateZ(-25deg);opacity:.4}50%{transform:rotateZ(15deg);opacity:.8}75%{transform:rotateZ(-5deg);opacity:1}100%{transform:rotateX(0);opacity:1}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto !important}body.swal2-no-backdrop .swal2-container{background-color:rgba(0,0,0,0) !important;pointer-events:none}body.swal2-no-backdrop .swal2-container .swal2-popup{pointer-events:all}body.swal2-no-backdrop .swal2-container .swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll !important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static !important}}body.swal2-toast-shown .swal2-container{box-sizing:border-box;width:360px;max-width:100%;background-color:rgba(0,0,0,0);pointer-events:none}body.swal2-toast-shown .swal2-container.swal2-top{inset:0 auto auto 50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{inset:0 0 auto auto}body.swal2-toast-shown .swal2-container.swal2-top-start,body.swal2-toast-shown .swal2-container.swal2-top-left{inset:0 auto auto 0}body.swal2-toast-shown .swal2-container.swal2-center-start,body.swal2-toast-shown .swal2-container.swal2-center-left{inset:50% auto auto 0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{inset:50% auto auto 50%;transform:translate(-50%, -50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{inset:50% 0 auto auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-start,body.swal2-toast-shown .swal2-container.swal2-bottom-left{inset:auto auto 0 0}body.swal2-toast-shown .swal2-container.swal2-bottom{inset:auto auto 0 50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{inset:auto 0 0 auto}</style></head>
+    <body>
+        <div id="app"><div class="_main-layout_ak685_1"><div class="_header-container_ak685_22" style="height: 54px; margin-bottom: 0px;"><header class="_header_ak685_7"><a href="/qrcode" class="_home-link_ak685_39"><svg class="_back-icon_ak685_53" viewBox="0 0 24 24"><path d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20v-2z"></path></svg><span class="_header-text_ak685_61">Subaşı Kasap Izgara - Menü</span></a></header></div><div class="_main_ak685_1"><div><div class="_cohost-switch-wrapper_1lke1_1"><ol class="_cohost-switch_1lke1_1 cohost-switch"><li class=""><a href="/qrcode">Tümü</a></li><li class=""><a href="/qrcode/menu-kebaplar-ve-izgaralar/">Kebaplar &amp; Izgaralar</a></li><li class=""><a href="/qrcode/menu-ekmek-arasi-urunler/">Ekmek Arası Ürünler</a></li><li class=""><a href="/qrcode/menu-salatalar/">Salatalar</a></li><li class=""><a href="/qrcode/menu-tatlilar/">Tatlılar</a></li><li class=""><a href="/qrcode/menu-icecekler/">İçecekler</a></li><li class="_current-cohost_1lke1_29"><a href="/qrcode/menu-cig-urunler/">Çiğ Ürünler</a></li><li class=""><a href="/qrcode/menu-pide-cesitleri/">Pide Çeşitleri</a></li><li class=""><a href="/qrcode/menu-guvec-cesitleri/">Güveç Çeşitleri</a></li></ol></div><ol class="_video-list_pcyj8_1"><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-dana-antrikot/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/7h9DUnAkEcU/mqdefault.jpg 320w, https://i.ytimg.com/vi/7h9DUnAkEcU/hqdefault.jpg 480w, https://i.ytimg.com/vi/7h9DUnAkEcU/sddefault.jpg 640w, https://i.ytimg.com/vi/7h9DUnAkEcU/maxresdefault.jpg 1280w" alt="Dana Antrikot"><p class="_video-meta_pcyj8_31"><time>Dana Antrikot</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-kuzu-biftek/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/j43Y32qdjIQ/mqdefault.jpg 320w, https://i.ytimg.com/vi/j43Y32qdjIQ/hqdefault.jpg 480w, https://i.ytimg.com/vi/j43Y32qdjIQ/sddefault.jpg 640w, https://i.ytimg.com/vi/j43Y32qdjIQ/maxresdefault.jpg 1280w" alt="Kuzu Biftek"><p class="_video-meta_pcyj8_31"><time>Kuzu Biftek</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-kuzu-pirzola/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/QJ7ia9w2Dto/mqdefault.jpg 320w, https://i.ytimg.com/vi/QJ7ia9w2Dto/hqdefault.jpg 480w, https://i.ytimg.com/vi/QJ7ia9w2Dto/sddefault.jpg 640w, https://i.ytimg.com/vi/QJ7ia9w2Dto/maxresdefault.jpg 1280w" alt="Kuzu Pirzola"><p class="_video-meta_pcyj8_31"><time>Kuzu Pirzola</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-kuzu-beyti/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/KsZxgTwsL18/mqdefault.jpg 320w, https://i.ytimg.com/vi/KsZxgTwsL18/hqdefault.jpg 480w, https://i.ytimg.com/vi/KsZxgTwsL18/sddefault.jpg 640w, https://i.ytimg.com/vi/KsZxgTwsL18/maxresdefault.jpg 1280w" alt="Kuzu Beyti"><p class="_video-meta_pcyj8_31"><time>Kuzu Beyti</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-kuzu-bobrek/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/7_AD1-089Kc/mqdefault.jpg 320w, https://i.ytimg.com/vi/7_AD1-089Kc/hqdefault.jpg 480w, https://i.ytimg.com/vi/7_AD1-089Kc/sddefault.jpg 640w, https://i.ytimg.com/vi/7_AD1-089Kc/maxresdefault.jpg 1280w" alt="Kuzu Böbrek"><p class="_video-meta_pcyj8_31"><time>Kuzu Böbrek</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-kuzu-cizik/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/dJ1hD2hqHIY/mqdefault.jpg 320w, https://i.ytimg.com/vi/dJ1hD2hqHIY/hqdefault.jpg 480w, https://i.ytimg.com/vi/dJ1hD2hqHIY/sddefault.jpg 640w, https://i.ytimg.com/vi/dJ1hD2hqHIY/maxresdefault.jpg 1280w" alt="Kuzu Çizik"><p class="_video-meta_pcyj8_31"><time>Kuzu Çizik</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-kuzu-incik/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/tb943NT1Ltc/mqdefault.jpg 320w, https://i.ytimg.com/vi/tb943NT1Ltc/hqdefault.jpg 480w, https://i.ytimg.com/vi/tb943NT1Ltc/sddefault.jpg 640w, https://i.ytimg.com/vi/tb943NT1Ltc/maxresdefault.jpg 1280w" alt="Kuzu İncik"><p class="_video-meta_pcyj8_31"><time>Kuzu İncik</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-kuzu-kaburga/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/LFZzmIz1hAg/mqdefault.jpg 320w, https://i.ytimg.com/vi/LFZzmIz1hAg/hqdefault.jpg 480w, https://i.ytimg.com/vi/LFZzmIz1hAg/sddefault.jpg 640w, https://i.ytimg.com/vi/LFZzmIz1hAg/maxresdefault.jpg 1280w" alt="Kuzu Kaburga"><p class="_video-meta_pcyj8_31"><time>Kuzu Kaburga</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-kuzu-kol/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/4aKzxH2-UaE/mqdefault.jpg 320w, https://i.ytimg.com/vi/4aKzxH2-UaE/hqdefault.jpg 480w, https://i.ytimg.com/vi/4aKzxH2-UaE/sddefault.jpg 640w, https://i.ytimg.com/vi/4aKzxH2-UaE/maxresdefault.jpg 1280w" alt="Kuzu Kol"><p class="_video-meta_pcyj8_31"><time>Kuzu Kol</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-kemikli-dana-eti/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/sZJhd0rjJZo/mqdefault.jpg 320w, https://i.ytimg.com/vi/sZJhd0rjJZo/hqdefault.jpg 480w, https://i.ytimg.com/vi/sZJhd0rjJZo/sddefault.jpg 640w, https://i.ytimg.com/vi/sZJhd0rjJZo/maxresdefault.jpg 1280w" alt="Kemikli Dana Eti"><p class="_video-meta_pcyj8_31"><time>Kemikli Dana Eti</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-dana-kofte/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/x_C0BNCrP5c/mqdefault.jpg 320w, https://i.ytimg.com/vi/x_C0BNCrP5c/hqdefault.jpg 480w, https://i.ytimg.com/vi/x_C0BNCrP5c/sddefault.jpg 640w, https://i.ytimg.com/vi/x_C0BNCrP5c/maxresdefault.jpg 1280w" alt="Dana Köfte"><p class="_video-meta_pcyj8_31"><time>Dana Köfte</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-dana-bonfile/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/8O4Kv8nQ3tI/mqdefault.jpg 320w, https://i.ytimg.com/vi/8O4Kv8nQ3tI/hqdefault.jpg 480w, https://i.ytimg.com/vi/8O4Kv8nQ3tI/sddefault.jpg 640w, https://i.ytimg.com/vi/8O4Kv8nQ3tI/maxresdefault.jpg 1280w" alt="Dana Bonfile"><p class="_video-meta_pcyj8_31"><time>Dana Bonfile</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-dana-kiyma/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/3flJ4KBOId8/mqdefault.jpg 320w, https://i.ytimg.com/vi/3flJ4KBOId8/hqdefault.jpg 480w, https://i.ytimg.com/vi/3flJ4KBOId8/sddefault.jpg 640w, https://i.ytimg.com/vi/3flJ4KBOId8/maxresdefault.jpg 1280w" alt="Dana Kıyma"><p class="_video-meta_pcyj8_31"><time>Dana Kıyma</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-dana-kusbasi/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/cc3tYnqYRc4/mqdefault.jpg 320w, https://i.ytimg.com/vi/cc3tYnqYRc4/hqdefault.jpg 480w, https://i.ytimg.com/vi/cc3tYnqYRc4/sddefault.jpg 640w, https://i.ytimg.com/vi/cc3tYnqYRc4/maxresdefault.jpg 1280w" alt="Dana Kuşbaşı"><p class="_video-meta_pcyj8_31"><time>Dana Kuşbaşı</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-dana-sis/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/NLszZlsPwzY/mqdefault.jpg 320w, https://i.ytimg.com/vi/NLszZlsPwzY/hqdefault.jpg 480w, https://i.ytimg.com/vi/NLszZlsPwzY/sddefault.jpg 640w, https://i.ytimg.com/vi/NLszZlsPwzY/maxresdefault.jpg 1280w" alt="Dana Şiş"><p class="_video-meta_pcyj8_31"><time>Dana Şiş</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-dana-yurek/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/6pV89GkqLdI/mqdefault.jpg 320w, https://i.ytimg.com/vi/6pV89GkqLdI/hqdefault.jpg 480w, https://i.ytimg.com/vi/6pV89GkqLdI/sddefault.jpg 640w, https://i.ytimg.com/vi/6pV89GkqLdI/maxresdefault.jpg 1280w" alt="Dana Yürek"><p class="_video-meta_pcyj8_31"><time>Dana Yürek</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-dana-kulbasti/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/xdTZ-1AfIeU/mqdefault.jpg 320w, https://i.ytimg.com/vi/xdTZ-1AfIeU/hqdefault.jpg 480w, https://i.ytimg.com/vi/xdTZ-1AfIeU/sddefault.jpg 640w, https://i.ytimg.com/vi/xdTZ-1AfIeU/maxresdefault.jpg 1280w" alt="Dana Külbastı"><p class="_video-meta_pcyj8_31"><time>Dana Külbastı</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-dana-dallas/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/9oINy8Vi5dI/mqdefault.jpg 320w, https://i.ytimg.com/vi/9oINy8Vi5dI/hqdefault.jpg 480w, https://i.ytimg.com/vi/9oINy8Vi5dI/sddefault.jpg 640w, https://i.ytimg.com/vi/9oINy8Vi5dI/maxresdefault.jpg 1280w" alt="Dana Dallas"><p class="_video-meta_pcyj8_31"><time>Dana Dallas</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-dana-kavurma/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/3aj_7Fsz2l8/mqdefault.jpg 320w, https://i.ytimg.com/vi/3aj_7Fsz2l8/hqdefault.jpg 480w, https://i.ytimg.com/vi/3aj_7Fsz2l8/sddefault.jpg 640w, https://i.ytimg.com/vi/3aj_7Fsz2l8/maxresdefault.jpg 1280w" alt="Dana Kavurma"><p class="_video-meta_pcyj8_31"><time>Dana Kavurma</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-osmanli-sucuk/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/0KFKgvdiG2Y/mqdefault.jpg 320w, https://i.ytimg.com/vi/0KFKgvdiG2Y/hqdefault.jpg 480w, https://i.ytimg.com/vi/0KFKgvdiG2Y/sddefault.jpg 640w, https://i.ytimg.com/vi/0KFKgvdiG2Y/maxresdefault.jpg 1280w" alt="Osmanlı Sucuk"><p class="_video-meta_pcyj8_31"><time>Osmanlı Sucuk</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-pastirma/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/GZnEDf0TTj8/mqdefault.jpg 320w, https://i.ytimg.com/vi/GZnEDf0TTj8/hqdefault.jpg 480w, https://i.ytimg.com/vi/GZnEDf0TTj8/sddefault.jpg 640w, https://i.ytimg.com/vi/GZnEDf0TTj8/maxresdefault.jpg 1280w" alt="Pastırma"><p class="_video-meta_pcyj8_31"><time>Pastırma</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-tavuk-pirzola/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/uKNhhMXM-EU/mqdefault.jpg 320w, https://i.ytimg.com/vi/uKNhhMXM-EU/hqdefault.jpg 480w, https://i.ytimg.com/vi/uKNhhMXM-EU/sddefault.jpg 640w, https://i.ytimg.com/vi/uKNhhMXM-EU/maxresdefault.jpg 1280w" alt="Tavuk Pirzola"><p class="_video-meta_pcyj8_31"><time>Tavuk Pirzola</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-tavuk-but/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/s3l5wmbXxWM/mqdefault.jpg 320w, https://i.ytimg.com/vi/s3l5wmbXxWM/hqdefault.jpg 480w, https://i.ytimg.com/vi/s3l5wmbXxWM/sddefault.jpg 640w, https://i.ytimg.com/vi/s3l5wmbXxWM/maxresdefault.jpg 1280w" alt="Tavuk But"><p class="_video-meta_pcyj8_31"><time>Tavuk But</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-tavuk-but-sis/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/ehpr0amfo98/mqdefault.jpg 320w, https://i.ytimg.com/vi/ehpr0amfo98/hqdefault.jpg 480w, https://i.ytimg.com/vi/ehpr0amfo98/sddefault.jpg 640w, https://i.ytimg.com/vi/ehpr0amfo98/maxresdefault.jpg 1280w" alt="Tavuk But Şiş"><p class="_video-meta_pcyj8_31"><time>Tavuk But Şiş</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-tavuk-fileto/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/h22rarij4VM/mqdefault.jpg 320w, https://i.ytimg.com/vi/h22rarij4VM/hqdefault.jpg 480w, https://i.ytimg.com/vi/h22rarij4VM/sddefault.jpg 640w, https://i.ytimg.com/vi/h22rarij4VM/maxresdefault.jpg 1280w" alt="Tavuk Fileto"><p class="_video-meta_pcyj8_31"><time>Tavuk Fileto</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-tavuk-kanat/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/cD2lIFf0xsw/mqdefault.jpg 320w, https://i.ytimg.com/vi/cD2lIFf0xsw/hqdefault.jpg 480w, https://i.ytimg.com/vi/cD2lIFf0xsw/sddefault.jpg 640w, https://i.ytimg.com/vi/cD2lIFf0xsw/maxresdefault.jpg 1280w" alt="Tavuk Kanat"><p class="_video-meta_pcyj8_31"><time>Tavuk Kanat</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/cig-tavuk-yaprak-kanat/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/cD2lIFf0xsw/mqdefault.jpg 320w, https://i.ytimg.com/vi/cD2lIFf0xsw/hqdefault.jpg 480w, https://i.ytimg.com/vi/cD2lIFf0xsw/sddefault.jpg 640w, https://i.ytimg.com/vi/cD2lIFf0xsw/maxresdefault.jpg 1280w" alt="Tavuk Yaprak Kanat"><p class="_video-meta_pcyj8_31"><time>Tavuk Yaprak Kanat</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/iskembe/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/tVlDpEcDLdM/mqdefault.jpg 320w, https://i.ytimg.com/vi/tVlDpEcDLdM/hqdefault.jpg 480w, https://i.ytimg.com/vi/tVlDpEcDLdM/sddefault.jpg 640w, https://i.ytimg.com/vi/tVlDpEcDLdM/maxresdefault.jpg 1280w" alt="İşkembe"><p class="_video-meta_pcyj8_31"><time>İşkembe</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/ciger/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/XlDjb24RnLg/mqdefault.jpg 320w, https://i.ytimg.com/vi/XlDjb24RnLg/hqdefault.jpg 480w, https://i.ytimg.com/vi/XlDjb24RnLg/sddefault.jpg 640w, https://i.ytimg.com/vi/XlDjb24RnLg/maxresdefault.jpg 1280w" alt="Ciğer"><p class="_video-meta_pcyj8_31"><time>Ciğer</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/sucuk-acili/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/Ihc_jBHvjCM/mqdefault.jpg 320w, https://i.ytimg.com/vi/Ihc_jBHvjCM/hqdefault.jpg 480w, https://i.ytimg.com/vi/Ihc_jBHvjCM/sddefault.jpg 640w, https://i.ytimg.com/vi/Ihc_jBHvjCM/maxresdefault.jpg 1280w" alt="Sucuk Acılı"><p class="_video-meta_pcyj8_31"><time>Sucuk Acılı</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/sucuk-acisiz/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/1oxJvlRI-kM/mqdefault.jpg 320w, https://i.ytimg.com/vi/1oxJvlRI-kM/hqdefault.jpg 480w, https://i.ytimg.com/vi/1oxJvlRI-kM/sddefault.jpg 640w, https://i.ytimg.com/vi/1oxJvlRI-kM/maxresdefault.jpg 1280w" alt="Sucuk Acısız"><p class="_video-meta_pcyj8_31"><time>Sucuk Acısız</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/sari-yumurta-l-boy-30-adet/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/QoQkYZfejJI/mqdefault.jpg 320w, https://i.ytimg.com/vi/QoQkYZfejJI/hqdefault.jpg 480w, https://i.ytimg.com/vi/QoQkYZfejJI/sddefault.jpg 640w, https://i.ytimg.com/vi/QoQkYZfejJI/maxresdefault.jpg 1280w" alt="Sarı Yumurta L Boy 30 Adet"><p class="_video-meta_pcyj8_31"><time>Sarı Yumurta L Boy 30 Adet</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/sari-yumurta-l-boy-15-adet/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/Yqd2QpOeR1M/mqdefault.jpg 320w, https://i.ytimg.com/vi/Yqd2QpOeR1M/hqdefault.jpg 480w, https://i.ytimg.com/vi/Yqd2QpOeR1M/sddefault.jpg 640w, https://i.ytimg.com/vi/Yqd2QpOeR1M/maxresdefault.jpg 1280w" alt="Sarı Yumurta L Boy 15 Adet"><p class="_video-meta_pcyj8_31"><time>Sarı Yumurta L Boy 15 Adet</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/siyah-zeytin-iri-boy/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/QdG4vKN-Flc/mqdefault.jpg 320w, https://i.ytimg.com/vi/QdG4vKN-Flc/hqdefault.jpg 480w, https://i.ytimg.com/vi/QdG4vKN-Flc/sddefault.jpg 640w, https://i.ytimg.com/vi/QdG4vKN-Flc/maxresdefault.jpg 1280w" alt="Siyah Zeytin İri Boy"><p class="_video-meta_pcyj8_31"><time>Siyah Zeytin İri Boy</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/beyaz-yumurta-15-adet/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/FZ7oiJaNPV4/mqdefault.jpg 320w, https://i.ytimg.com/vi/FZ7oiJaNPV4/hqdefault.jpg 480w, https://i.ytimg.com/vi/FZ7oiJaNPV4/sddefault.jpg 640w, https://i.ytimg.com/vi/FZ7oiJaNPV4/maxresdefault.jpg 1280w" alt="Beyaz Yumurta 15 Adet"><p class="_video-meta_pcyj8_31"><time>Beyaz Yumurta 15 Adet</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/beyaz-yumurta-30-adet/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/f2Kx-cpG8Vc/mqdefault.jpg 320w, https://i.ytimg.com/vi/f2Kx-cpG8Vc/hqdefault.jpg 480w, https://i.ytimg.com/vi/f2Kx-cpG8Vc/sddefault.jpg 640w, https://i.ytimg.com/vi/f2Kx-cpG8Vc/maxresdefault.jpg 1280w" alt="Beyaz Yumurta 30 Adet"><p class="_video-meta_pcyj8_31"><time>Beyaz Yumurta 30 Adet</time></p></a></li><li><a class="_video-link_pcyj8_38" href="/qrcode/urunler/kuyruk-yagli-masaj-kremi/"><img class="_video-thumb_pcyj8_21 video-thumb" srcset="https://i.ytimg.com/vi/LCce-0-zW1I/mqdefault.jpg 320w, https://i.ytimg.com/vi/LCce-0-zW1I/hqdefault.jpg 480w, https://i.ytimg.com/vi/LCce-0-zW1I/sddefault.jpg 640w, https://i.ytimg.com/vi/LCce-0-zW1I/maxresdefault.jpg 1280w" alt="Kuyruk Yağlı Masaj Kremi"><p class="_video-meta_pcyj8_31"><time>Kuyruk Yağlı Masaj Kremi</time></p></a></li></ol></div></div></div>
+
+        </div>
+        <script type="text/javascript">
+            const ROOT_URL = location.protocol+'//'+location.hostname+'/'+location.pathname.split('/')[1];
+            favicon = document.createElement('link');
+            favicon.rel = 'icon';
+            favicon.href = ROOT_URL+'/c/favicon-9106ee98.png';
+            favicon.setAttribute('type','image/png');
+            document.head.appendChild(favicon);
+
+            script = document.createElement('script');
+            script.type = 'module';
+            script.src = ROOT_URL+'/c/client-16215717.js';
+            document.head.appendChild(script);
+
+            script2 = document.createElement('script');
+            script2.src = ROOT_URL+'/../style/js/sweetalert2.js';
+            document.head.appendChild(script2);
+
+            /*
+            script3 = document.createElement('script');
+            script3.src = ROOT_URL+'/../style/js/whatsapp.js';
+            document.head.appendChild(script3);
+            */
+
+            script4 = document.createElement('script');
+            script4.src = ROOT_URL+'/../js/google_analytics.js';
+            document.head.appendChild(script4);
+
+            script5 = document.createElement('script');
+            script5.src = ROOT_URL+'/../js/google_tagmanager.js';
+            document.head.appendChild(script5);
+
+            script6 = document.createElement('script');
+            script6.src = ROOT_URL+'/../js/ilave.js';
+            document.head.appendChild(script6);
+
+            css = document.createElement('link');
+            css.rel = 'stylesheet';
+            css.href = ROOT_URL+'/../style/css/animate.min.css';
+            document.head.appendChild(css);
+
+            setTimeout(function () {
+                Swal.fire({
+                    title: 'Yorumlarınız bizim için çok kıymetli yorumlarınızı bekliyoruz 😊',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#df0024',
+                    confirmButtonText: 'Yorum yap',
+                    cancelButtonText: 'Menüyü incelemeye devam et',
+                    showClass: {
+                        popup: 'animate__animated animate__fadeInDown'
+                    },
+                    hideClass: {
+                        popup: 'animate__animated animate__fadeOutUp'
+                    }
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        location.href = ROOT_URL+'/../hakkimizda.html?musteri_yorumlari';
+                        /*
+                        // geri gelince bug'ta kalıyor. bu sebepten ötürü kapattım
+                        Swal.fire({
+                            title: 'Yönlendiriliyorsunuz...',
+                            didOpen: () => {
+                                Swal.showLoading();
+                            }
+                        });
+                        */
+                    }
+                });
+            },45000);
+        </script>
+    
+
+</body></html>
