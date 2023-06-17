@@ -22,7 +22,7 @@ if (document.URL.indexOf('qrcode') == -1) {
     setTimeout(function () {
         Swal.fire({
             title: 'Şifacı Baba Geldi',
-            text: 'Diz boyun ve bel ağrıları için birebir<br>kuyruk yağlı masaj kremimizi denediniz mi?',
+            html: 'Diz boyun ve bel ağrıları için birebir<br>kuyruk yağlı masaj kremimizi denediniz mi?<br><br>İbn-i Sina\'nın kemik düzelten yağı dediği kuyruk yağlı masaj kremi',
             imageUrl: 'https://subasikasapizgara.com/upload/kuyruk-yagli-masaj-kremi.jpg',
             imageWidth: 400,
             imageHeight: 309,
