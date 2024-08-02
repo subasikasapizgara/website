@@ -6,7 +6,7 @@ const tum_urunler = {
             description: '',
             published: "Tavuk Izgara",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '400,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '350,00 ₺ (1Kg Fiyatıdır)'
         },
         "tavuk-pirzola": {
             id: "IHHKiz4A5KQ",
@@ -14,7 +14,7 @@ const tum_urunler = {
             description: '',
             published: "Tavuk Pirzola",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '550,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '400,00 ₺ (1Kg Fiyatıdır)'
         },
         "tavuk-sis": {
             id: "JJeRgyYDoFo",
@@ -22,7 +22,7 @@ const tum_urunler = {
             description: '',
             published: "Tavuk Şiş",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '600,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '450,00 ₺ (1Kg Fiyatıdır)'
         },
         "dana-izgara-kofte": {
             id: "H7jpg4EOZ5Y",
@@ -30,7 +30,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Izgara Köfte",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '850,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '650,00 ₺ (1Kg Fiyatıdır)'
         },
         "dana-izgara-kasarli-kofte": {
             id: "BFPlg-FyWWE",
@@ -38,7 +38,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Izgara Kaşarlı Köfte",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '850,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '675,00 ₺ (1Kg Fiyatıdır)'
         },
         "dana-izgara-sucuk": {
             id: "WoDVqFXqGpI",
@@ -46,7 +46,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Izgara Sucuk",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '850,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '650,00 ₺ (1Kg Fiyatıdır)'
         },
         "dana-sis": {
             id: "kiuyt98HSb0",
@@ -54,7 +54,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Şiş",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '1100,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '800,00 ₺ (1Kg Fiyatıdır)'
         },
         "dana-antrikot": {
             id: "LWArL3TS1kk",
@@ -62,7 +62,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Antrikot",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '1000,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '750,00 ₺ (1Kg Fiyatıdır)'
         },
         "dana-bonfile": {
             id: "u1aaKHl31ZA",
@@ -70,7 +70,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Bonfile",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '1100,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '850,00 ₺ (1Kg Fiyatıdır)'
         },
         "dana-ciger": {
             id: "2KCSHAl1Apg",
@@ -78,7 +78,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Ciğer",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '900,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '675,00 ₺ (1Kg Fiyatıdır)'
         },
         "dallas-izgara": {
             id: "vOeVuT8lTJQ",
@@ -86,7 +86,7 @@ const tum_urunler = {
             description: '',
             published: "Dallas Izgara",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '900,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '775,00 ₺ (1Kg Fiyatıdır)'
         },
         "kuzu-pirzola": {
             id: "b2BLAmV-slk",
@@ -94,7 +94,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu Pirzola",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '1290,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '750,00 ₺ (1Kg Fiyatıdır)'
         },
         "kuzu-biftek": {
             id: "rnIUEk4X1_s",
@@ -102,7 +102,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu Biftek",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '1100,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '750,00 ₺ (1Kg Fiyatıdır)'
         },
         "kuzu-bonfile-kusleme": {
             id: "2AVX1FeLaYQ",
@@ -110,7 +110,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu Bonfile (Küşleme)",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '1300,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '800,00 ₺ (1Kg Fiyatıdır)'
         },
         "kuzu-sis": {
             id: "9iXTB8oZCFk",
@@ -118,7 +118,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu Şiş",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '1100,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '750,00 ₺ (1Kg Fiyatıdır)'
         },
         "kuzu-beyti": {
             id: "yBNNSbkWpIg",
@@ -126,7 +126,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu Beyti",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '1100,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '750,00 ₺ (1Kg Fiyatıdır)'
         },
         "kuzu-bobrek": {
             id: "ThuG5tw_Enw",
@@ -134,7 +134,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu Böbrek",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '850,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '450,00 ₺ (1Kg Fiyatıdır)'
         },
         "kasarli-mantar": {
             id: "y20juD9bPZU",
@@ -142,7 +142,7 @@ const tum_urunler = {
             description: '',
             published: "Kaşarlı Mantar",
             cohost: "kebaplar-ve-izgaralar",
-            fiyat: '500,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '400,00 ₺ (1Kg Fiyatıdır)'
         },
         "ekmek-arasi-sucuk": {
             id: "ldzEP5F_Bqg",
@@ -150,7 +150,7 @@ const tum_urunler = {
             description: '',
             published: "Ekmek Arası Sucuk",
             cohost: "ekmek-arasi-urunler",
-            fiyat: '175,00 ₺'
+            fiyat: '100,00 ₺'
         },
         "ekmek-arasi-kofte": {
             id: "onFIKVVZvlU",
@@ -158,7 +158,7 @@ const tum_urunler = {
             description: '',
             published: "Ekmek Arası Köfte",
             cohost: "ekmek-arasi-urunler",
-            fiyat: '175,00 ₺'
+            fiyat: '100,00 ₺'
         },
         "ekmek-arasi-tavuk-sis": {
             id: "8lrsT0Zq8OY",
@@ -166,7 +166,7 @@ const tum_urunler = {
             description: '',
             published: "Ekmek Arası Tavuk Şiş",
             cohost: "ekmek-arasi-urunler",
-            fiyat: '175,00 ₺'
+            fiyat: '100,00 ₺'
         },
         "mevsim-salata": {
             id: "X_I8vk_kY8I",
@@ -174,7 +174,7 @@ const tum_urunler = {
             description: '',
             published: "Mevsim Salata",
             cohost: "salatalar",
-            fiyat: '60,00 ₺'
+            fiyat: '40,00 ₺'
         },
         "coban-salata": {
             id: "YTViowGWXE0",
@@ -182,7 +182,7 @@ const tum_urunler = {
             description: '',
             published: "Çoban Salata",
             cohost: "salatalar",
-            fiyat: '80,00 ₺'
+            fiyat: '60,00 ₺'
         },
         "ekmek-kadayifi": {
             id: "pxVkQ33vCs8",
@@ -190,7 +190,7 @@ const tum_urunler = {
             description: '',
             published: "Ekmek Kadayıfı",
             cohost: "tatlilar",
-            fiyat: '80,00 ₺'
+            fiyat: '60,00 ₺'
         },
         "kabak-tatlisi": {
             id: "9Mrtf9SDm1I",
@@ -198,7 +198,7 @@ const tum_urunler = {
             description: '',
             published: "Kabak Tatlısı",
             cohost: "tatlilar",
-            fiyat: '90,00 ₺'
+            fiyat: '75,00 ₺'
         },
         "sutlac": {
             id: "2R6aYEnRmyc",
@@ -206,7 +206,7 @@ const tum_urunler = {
             description: '',
             published: "Sütlaç",
             cohost: "tatlilar",
-            fiyat: '70,00 ₺'
+            fiyat: '50,00 ₺'
         },
         "katmer": {
             id: "CllL2hqC4rI",
@@ -214,7 +214,7 @@ const tum_urunler = {
             description: '',
             published: "Katmer",
             cohost: "tatlilar",
-            fiyat: '0,00 ₺'
+            fiyat: '60,00 ₺'
         },
         "kunefe": {
             id: "oXq-p4TZ44Y",
@@ -222,7 +222,7 @@ const tum_urunler = {
             description: '',
             published: "Künefe",
             cohost: "tatlilar",
-            fiyat: '0,00 ₺'
+            fiyat: '60,00 ₺'
         },
         "coca-cola": {
             id: "BX6X1bXsXKk",
@@ -230,7 +230,7 @@ const tum_urunler = {
             description: '',
             published: "Coca Cola",
             cohost: "icecekler",
-            fiyat: '60,00 ₺'
+            fiyat: '35,00 ₺'
         },
         "coca-cola-zero": {
             id: "DCc3sda7sM8",
@@ -238,7 +238,7 @@ const tum_urunler = {
             description: '',
             published: "Coca Cola Zero",
             cohost: "icecekler",
-            fiyat: '60,00 ₺'
+            fiyat: '35,00 ₺'
         },
         "sise-coca-cola": {
             id: "NZiQ6vIiEs8",
@@ -246,7 +246,7 @@ const tum_urunler = {
             description: '',
             published: "Şişe Coca Cola",
             cohost: "icecekler",
-            fiyat: '50,00 ₺'
+            fiyat: '30,00 ₺'
         },
         "fanta": {
             id: "I8-NagwlAiI",
@@ -254,7 +254,7 @@ const tum_urunler = {
             description: '',
             published: "Fanta",
             cohost: "icecekler",
-            fiyat: '60,00 ₺'
+            fiyat: '35,00 ₺'
         },
         "cappy-karisik": {
             id: "CYgFO4l4L44",
@@ -262,7 +262,7 @@ const tum_urunler = {
             description: '',
             published: "Cappy Karışık",
             cohost: "icecekler",
-            fiyat: '60,00 ₺'
+            fiyat: '35,00 ₺'
         },
         "cappy-visne": {
             id: "-IrW0WLvoK8",
@@ -270,7 +270,7 @@ const tum_urunler = {
             description: '',
             published: "Cappy Vişne",
             cohost: "icecekler",
-            fiyat: '60,00 ₺'
+            fiyat: '35,00 ₺'
         },
         "cappy-seftali": {
             id: "S8UL3VmOgJo",
@@ -278,7 +278,7 @@ const tum_urunler = {
             description: '',
             published: "Cappy Şeftali",
             cohost: "icecekler",
-            fiyat: '60,00 ₺'
+            fiyat: '35,00 ₺'
         },
         "fuse-tea-seftali": {
             id: "diusTl0zMYY",
@@ -286,7 +286,7 @@ const tum_urunler = {
             description: '',
             published: "Fuse Tea Şeftali",
             cohost: "icecekler",
-            fiyat: '60,00 ₺'
+            fiyat: '35,00 ₺'
         },
         "ayran-buyuk": {
             id: "o6ExLS5L_Zo",
@@ -294,7 +294,7 @@ const tum_urunler = {
             description: '',
             published: "Büyük Ayran",
             cohost: "icecekler",
-            fiyat: '45,00 ₺'
+            fiyat: '20,00 ₺'
         },
         "ayran-kucuk": {
             id: "o6ExLS5L_Zo",
@@ -302,7 +302,7 @@ const tum_urunler = {
             description: '',
             published: "Küçük Ayran",
             cohost: "icecekler",
-            fiyat: '35,00 ₺'
+            fiyat: '15,00 ₺'
         },
         "salgam-acisiz": {
             id: "bBFljHtMw04",
@@ -310,7 +310,7 @@ const tum_urunler = {
             description: '',
             published: "Şalgam Acısız",
             cohost: "icecekler",
-            fiyat: '45,00 ₺'
+            fiyat: '20,00 ₺'
         },
         "salgam-acili": {
             id: "Q-hBGcC2BPg",
@@ -318,7 +318,7 @@ const tum_urunler = {
             description: '',
             published: "Şalgam Acılı",
             cohost: "icecekler",
-            fiyat: '45,00 ₺'
+            fiyat: '20,00 ₺'
         },
         "uludag-gazoz": {
             id: "AuJYuRH6wOo",
@@ -326,7 +326,7 @@ const tum_urunler = {
             description: '',
             published: "Uludağ Gazoz",
             cohost: "icecekler",
-            fiyat: '45,00 ₺'
+            fiyat: '30,00 ₺'
         },
         "soda": {
             id: "TpY-LBRFZUU",
@@ -334,7 +334,7 @@ const tum_urunler = {
             description: '',
             published: "Soda",
             cohost: "icecekler",
-            fiyat: '25,00 ₺'
+            fiyat: '20,00 ₺'
         },
         "su": {
             id: "VMdJeCKGm38",
@@ -342,7 +342,7 @@ const tum_urunler = {
             description: '',
             published: "Su",
             cohost: "icecekler",
-            fiyat: '10,00 ₺'
+            fiyat: '5,00 ₺'
         },
         "cig-dana-antrikot": {
             id: "7h9DUnAkEcU",
@@ -350,7 +350,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Antrikot",
             cohost: "cig-urunler",
-            fiyat: '750,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '500,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-kuzu-biftek": {
             id: "j43Y32qdjIQ",
@@ -358,7 +358,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu Biftek",
             cohost: "cig-urunler",
-            fiyat: '900,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '550,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-kuzu-pirzola": {
             id: "QJ7ia9w2Dto",
@@ -366,7 +366,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu Pirzola",
             cohost: "cig-urunler",
-            fiyat: '990,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '560,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-kuzu-beyti": {
             id: "KsZxgTwsL18",
@@ -374,7 +374,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu Beyti",
             cohost: "cig-urunler",
-            fiyat: '990,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '600,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-kuzu-bobrek": {
             id: "7_AD1-089Kc",
@@ -382,7 +382,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu Böbrek",
             cohost: "cig-urunler",
-            fiyat: '650,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '300,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-kuzu-cizik": {
             id: "dJ1hD2hqHIY",
@@ -390,7 +390,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu Çizik",
             cohost: "cig-urunler",
-            fiyat: '950,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '650,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-kuzu-incik": {
             id: "tb943NT1Ltc",
@@ -398,7 +398,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu İncik",
             cohost: "cig-urunler",
-            fiyat: '750,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '400,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-kuzu-kaburga": {
             id: "LFZzmIz1hAg",
@@ -406,7 +406,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu Kaburga",
             cohost: "cig-urunler",
-            fiyat: '700,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '350,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-kuzu-kol": {
             id: "4aKzxH2-UaE",
@@ -414,7 +414,7 @@ const tum_urunler = {
             description: '',
             published: "Kuzu Kol",
             cohost: "cig-urunler",
-            fiyat: '630,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '350,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-kemikli-dana-eti": {
             id: "sZJhd0rjJZo",
@@ -422,7 +422,7 @@ const tum_urunler = {
             description: '',
             published: "Kemikli Dana Eti",
             cohost: "cig-urunler",
-            fiyat: '500,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '360,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-dana-kofte": {
             id: "x_C0BNCrP5c",
@@ -430,7 +430,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Köfte",
             cohost: "cig-urunler",
-            fiyat: '560,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '400,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-dana-bonfile": {
             id: "8O4Kv8nQ3tI",
@@ -438,7 +438,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Bonfile",
             cohost: "cig-urunler",
-            fiyat: '875,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '600,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-dana-kiyma": {
             id: "3flJ4KBOId8",
@@ -446,7 +446,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Kıyma",
             cohost: "cig-urunler",
-            fiyat: '550,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '400,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-dana-kusbasi": {
             id: "cc3tYnqYRc4",
@@ -454,7 +454,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Kuşbaşı",
             cohost: "cig-urunler",
-            fiyat: '600,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '450,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-dana-sis": {
             id: "NLszZlsPwzY",
@@ -462,7 +462,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Şiş",
             cohost: "cig-urunler",
-            fiyat: '900,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '540,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-dana-yurek": {
             id: "6pV89GkqLdI",
@@ -478,7 +478,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Külbastı",
             cohost: "cig-urunler",
-            fiyat: '1000,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '500,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-dana-dallas": {
             id: "9oINy8Vi5dI",
@@ -486,7 +486,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Dallas",
             cohost: "cig-urunler",
-            fiyat: '750,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '495,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-dana-kavurma": {
             id: "3aj_7Fsz2l8",
@@ -494,7 +494,7 @@ const tum_urunler = {
             description: '',
             published: "Dana Kavurma",
             cohost: "cig-urunler",
-            fiyat: '1200,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '800,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-osmanli-sucuk": {
             id: "0KFKgvdiG2Y",
@@ -502,7 +502,7 @@ const tum_urunler = {
             description: '',
             published: "Osmanlı Sucuk",
             cohost: "cig-urunler",
-            fiyat: '600,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '430,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-pastirma": {
             id: "GZnEDf0TTj8",
@@ -510,7 +510,7 @@ const tum_urunler = {
             description: '',
             published: "Pastırma",
             cohost: "cig-urunler",
-            fiyat: '1200,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '800,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-tavuk-pirzola": {
             id: "uKNhhMXM-EU",
@@ -518,7 +518,7 @@ const tum_urunler = {
             description: '',
             published: "Tavuk Pirzola",
             cohost: "cig-urunler",
-            fiyat: '330,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '130,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-tavuk-but": {
             id: "s3l5wmbXxWM",
@@ -526,7 +526,7 @@ const tum_urunler = {
             description: '',
             published: "Tavuk But",
             cohost: "cig-urunler",
-            fiyat: '125,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '75,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-tavuk-but-sis": {
             id: "ehpr0amfo98",
@@ -534,7 +534,7 @@ const tum_urunler = {
             description: '',
             published: "Tavuk But Şiş",
             cohost: "cig-urunler",
-            fiyat: '350,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '200,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-tavuk-fileto": {
             id: "h22rarij4VM",
@@ -542,7 +542,7 @@ const tum_urunler = {
             description: '',
             published: "Tavuk Fileto",
             cohost: "cig-urunler",
-            fiyat: '200,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '150,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-tavuk-kanat": {
             id: "cD2lIFf0xsw",
@@ -550,7 +550,7 @@ const tum_urunler = {
             description: '',
             published: "Tavuk Kanat",
             cohost: "cig-urunler",
-            fiyat: '200,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '130,00 ₺ (1Kg Fiyatıdır)'
         },
         "cig-tavuk-yaprak-kanat": {
             id: "cD2lIFf0xsw",
@@ -558,7 +558,7 @@ const tum_urunler = {
             description: '',
             published: "Tavuk Yaprak Kanat",
             cohost: "cig-urunler",
-            fiyat: '350,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '200,00 ₺ (1Kg Fiyatıdır)'
         },
         "iskembe": {
             id: "tVlDpEcDLdM",
@@ -566,7 +566,7 @@ const tum_urunler = {
             description: '',
             published: "İşkembe",
             cohost: "cig-urunler",
-            fiyat: '100,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '70,00 ₺ (1Kg Fiyatıdır)'
         },
         "ciger": {
             id: "XlDjb24RnLg",
@@ -574,7 +574,7 @@ const tum_urunler = {
             description: '',
             published: "Ciğer",
             cohost: "cig-urunler",
-            fiyat: '500,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '360,00 ₺ (1Kg Fiyatıdır)'
         },
         "sucuk-acili": {
             id: "Ihc_jBHvjCM",
@@ -582,7 +582,7 @@ const tum_urunler = {
             description: '',
             published: "Sucuk Acılı",
             cohost: "cig-urunler",
-            fiyat: '600,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '430,00 ₺ (1Kg Fiyatıdır)'
         },
         "sucuk-acisiz": {
             id: "1oxJvlRI-kM",
@@ -590,7 +590,7 @@ const tum_urunler = {
             description: '',
             published: "Sucuk Acısız",
             cohost: "cig-urunler",
-            fiyat: '600,00 ₺ (1Kg Fiyatıdır)'
+            fiyat: '430,00 ₺ (1Kg Fiyatıdır)'
         },
         "sari-yumurta-l-boy-30-adet": {
             id: "QoQkYZfejJI",
@@ -598,7 +598,7 @@ const tum_urunler = {
             description: '',
             published: "Sarı Yumurta L Boy 30 Adet",
             cohost: "cig-urunler",
-            fiyat: '150,00 ₺'
+            fiyat: '140,00 ₺'
         },
         "sari-yumurta-l-boy-15-adet": {
             id: "Yqd2QpOeR1M",
@@ -606,7 +606,7 @@ const tum_urunler = {
             description: '',
             published: "Sarı Yumurta L Boy 15 Adet",
             cohost: "cig-urunler",
-            fiyat: '75,00 ₺'
+            fiyat: '70,00 ₺'
         },
         "siyah-zeytin-iri-boy": {
             id: "QdG4vKN-Flc",
@@ -614,7 +614,7 @@ const tum_urunler = {
             description: '',
             published: "Siyah Zeytin İri Boy",
             cohost: "cig-urunler",
-            fiyat: '350,00 ₺'
+            fiyat: '240,00 ₺'
         },
         "beyaz-yumurta-15-adet": {
             id: "FZ7oiJaNPV4",
@@ -622,7 +622,7 @@ const tum_urunler = {
             description: '',
             published: "Beyaz Yumurta 15 Adet",
             cohost: "cig-urunler",
-            fiyat: '75,00 ₺'
+            fiyat: '60,00 ₺'
         },
         "beyaz-yumurta-30-adet": {
             id: "f2Kx-cpG8Vc",
@@ -630,7 +630,7 @@ const tum_urunler = {
             description: '',
             published: "Beyaz Yumurta 30 Adet",
             cohost: "cig-urunler",
-            fiyat: '150,00 ₺'
+            fiyat: '120,00 ₺'
         },
         "kuyruk-yagli-masaj-kremi": {
             id: "LCce-0-zW1I",
@@ -638,7 +638,7 @@ const tum_urunler = {
             description: '',
             published: "Kuyruk Yağlı Masaj Kremi",
             cohost: "cig-urunler",
-            fiyat: '300,00 ₺'
+            fiyat: '200,00 ₺'
         },
         "kiymali-pide": {
             id: "2HQZ8MfsZ5k",
@@ -710,7 +710,7 @@ const tum_urunler = {
             description: '<br>1 kg 4 kişilik<br>2 kg 8 kişilik<br>3 kg 12 kişilik<br>4 kg 16 kişilik<br>5 kg 20 kişilik<br>Lütfen <b>en az 4 saat</b> öncesinden rezervasyon oluşturun.',
             published: "Güveç Çeşitleri",
             cohost: "guvec-cesitleri",
-            fiyat: '0,00 ₺ (Kişi Başı)'
+            fiyat: '250,00 ₺ (Kişi Başı)'
         },
 
 
