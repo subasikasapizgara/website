@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veri Güvenliği Formu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            max-width: 800px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #1a73e8;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .data-safety-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .data-safety-table th, .data-safety-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .data-safety-table th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+
+        .data-safety-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: center;
+            color: #777;
+        }
+
+        .footer-text a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobil uyumluluk */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .data-safety-table th, .data-safety-table td {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+    </style>
+    <script>
+        if (document.URL.startsWith('http://')) {
+            window.location.href = document.URL.replace('http://','https://');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Veri Güvenliği Formu</h1>
+        <p>E-ticaret uygulamamızın veri toplama ve paylaşma pratikleri hakkında aşağıda detaylı bilgi bulabilirsiniz. Google Play'in Veri Güvenliği politikalarına uygun olarak, hangi verilerin toplandığını, nasıl kullanıldığını ve kimlerle paylaşıldığını şeffaf bir şekilde açıklıyoruz.</p>
+        
+        <h2>Toplanan Veriler</h2>
+        <table class="data-safety-table">
+            <thead>
+                <tr>
+                    <th>Veri Türü</th>
+                    <th>Toplanma Amacı</th>
+                    <th>Üçüncü Taraflarla Paylaşım</th>
+                    <th>Şifreleme</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kullanıcı Adı (eposta) ve Şifre</td>
+                    <td>Hesap doğrulama ve oturum yönetimi</td>
+                    <td>Hayır</td>
+                    <td>Evet (HTTPS ile şifrelenmiş)</td>
+                </tr>
+                <tr>
+                    <td>Cihaz veya Diğer Kimlikler (Reklam Kimliği, Android Kimliği)</td>
+                    <td>Push bildirimleri için hedefleme (OneSignal aracılığıyla)</td>
+                    <td>Evet (OneSignal ile paylaşılır)</td>
+                    <td>Evet (HTTPS ile şifrelenmiş)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Ek Bilgiler</h2>
+        <p>
+            - Uygulamamız, yalnızca üyelik işlemleri için gerekli olan verileri toplar.<br>
+            - Reklam veya analiz amaçlı veri (örneğin, Reklam Kimliği) toplanmaz.<br>
+            - Toplanan veriler, Google Play'in veri güvenliği politikalarına uygun olarak işlenir ve korunur.<br>
+            - Verilerinizin silinmesini talep etmek için <a href="veri-silme.html">Veri Silme Talebi</a> sayfamızı ziyaret edebilirsiniz.
+        </p>
+
+        <div class="footer-text">
+            Daha fazla bilgi için <a href="https://subasikasapizgara.com/gizlilik-poltikasi.html" target="_blank">Gizlilik Politikamızı</a> inceleyebilirsiniz. Sorularınız için <a href="https://subasikasapizgara.com/iletisim.html" target="_blank">bize ulaşın</a>.
+        </div>
+    </div>
+</body>
+</html>

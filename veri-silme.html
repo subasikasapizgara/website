@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Veri Silme Talebi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #1a73e8;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #1a73e8;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #1557b0;
+        }
+
+        .data-safety-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #34c759;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .data-safety-button:hover {
+            background-color: #2aa944;
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: center;
+            color: #777;
+        }
+
+        .footer-text a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobil uyumluluk */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .data-safety-button {
+                font-size: 16px;
+                padding: 12px;
+            }
+        }
+    </style>
+    <script>
+        if (document.URL.startsWith('http://')) {
+            window.location.href = document.URL.replace('http://','https://');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Veri Silme Talebi</h1>
+        <p>Kullanıcı verilerinizin silinmesini talep edebilirsiniz. Lütfen aşağıdaki formu doldurarak talebinizi bize iletin. Talebinizi en kısa sürede işleme alacağız.</p>
+        
+        <form action="" method="post" id="dataDeletionForm">
+            <div class="form-group">
+                <label for="email">E-posta Adresiniz</label>
+                <input type="email" id="email" name="email" placeholder="ornek@ornek.com" required>
+            </div>
+            <div class="form-group">
+                <label for="details">Silinmesini İstediğiniz Veriler</label>
+                <textarea id="details" name="details" placeholder="Lütfen silinmesini istediğiniz verilerle ilgili detayları belirtin (örneğin, cihaz kimliği, uygulama kullanım verileri)." required></textarea>
+            </div>
+            <button type="submit">Talebi Gönder</button>
+        </form>
+
+        <!-- Veri Güvenliği Formu Butonu -->
+        <hr style="margin-top:20px">
+        <a href="veri-guvenligi.html" class="data-safety-button">Veri Güvenliği Formu</a>
+
+        <div class="footer-text">
+            Daha fazla bilgi için <a href="https://subasikasapizgara.com/gizlilik-poltikasi.html" target="_blank">Gizlilik Politikamızı</a> inceleyebilirsiniz. Sorularınız için <a href="https://subasikasapizgara.com/iletisim.html" target="_blank">bize ulaşın</a>.
+        </div>
+    </div>
+    <script>
+        document.getElementById('dataDeletionForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Formun varsayılan gönderimini engelle
+
+            // Form verilerini al
+            const email = document.getElementById('email').value;
+            const details = document.getElementById('details').value;
+
+            // E-posta formatını doğrula (opsiyonel)
+            if (!email.includes('@')) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Hata',
+                    text: 'Lütfen geçerli bir e-posta adresi girin.',
+                    confirmButtonText: 'Tamam',
+                    confirmButtonColor: '#1a73e8'
+                });
+                return;
+            }
+
+            // JSON formatında veri gönder
+            fetch('api/veri-silme.html', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, details })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Sunucu hatası: ' + response.status);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.islem == 'basarili') {
+                    // Başarı mesajı
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Talebiniz Alınmıştır',
+                        text: 'İncelenip tarafınıza dönüş sağlanacaktır.',
+                        confirmButtonText: 'Tamam',
+                    }).then(() => {
+                        // Formu sıfırla
+                        document.getElementById('dataDeletionForm').reset();
+                    });
+                } else {
+                    // Hata mesajı
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Hata',
+                        text: data.mesaj || 'Talebiniz işlenirken bir hata oluştu.',
+                        confirmButtonText: 'Tamam',
+                        confirmButtonColor: '#1a73e8'
+                    });
+                }
+            })
+            .catch(error => {
+                // Ağ veya diğer hatalar
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Hata',
+                    text: 'Bir ağ hatası oluştu: ' + error.message,
+                    confirmButtonText: 'Tamam',
+                    confirmButtonColor: '#1a73e8'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
